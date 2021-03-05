@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+*{
+  font-family: 'Recursive', sans-serif;
+}
 body{
   overflow-x: hidden;
   overflow-y:scroll ;
@@ -19,7 +23,7 @@ body{
 	margin-left: 15px;
 	color: black;
 	text-align: center;
-	padding: 14px 16px;
+	padding:  16px;
 	text-decoration: none;
 	font-size: 17px;
   }
@@ -29,7 +33,8 @@ body{
 	background-color: #ddd;
 	color: black;
 	border: none;
-	border-top: solid #335a2c 2px;
+	border-bottom: solid #335a2c 2px;
+  transition: 0.8s;
   }
   
   /* Add a color to the active/current link */
@@ -39,7 +44,9 @@ body{
     border-top: solid #335a2c 2px;
     color: black;
     border: none;
-    border-top: solid #335a2c 2px;
+    border-bottom: solid #335a2c 2px;
+    transition: 0.8s;
+
   }
   .topimage{
     opacity: 0.8;
@@ -68,6 +75,7 @@ body{
     display: flex;
     width: 90%;
     justify-content: space-around;
+    margin: 30px;
   }
   
    .card {
@@ -125,6 +133,7 @@ body{
     transition: 0.5s;
   }
   .card .info h1 {
+    color: white;
     margin: 0px;
   }
   .card .info p {
@@ -137,15 +146,15 @@ body{
     outline: none;
     border: none;
     border-radius: 3px;
-    background: white;
+    background-color: #335a2c;
     color: black;
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
   }
   .card .info button:hover {
-    background: dodgerblue;
-    color: white;
+    background-color: white;
+    color: #335a2c;
   }
 
 
@@ -240,7 +249,6 @@ body{
   .btn {
     text-decoration: inherit;
     border-radius: 25px !important;
-    font-family: "Open Sans", "Arial" !important;
     line-height: 1.4em !important;
     font-size: 10px;
     padding: 10px 25px 10px 25px !important;
@@ -316,6 +324,9 @@ body{
     width: 80%;
     padding: 10px;
     margin: 10px;
+    border-radius: 15px;
+  }
+  input :focus{
     border-radius: 15px;
   }
   .formes,.nos-contact {
